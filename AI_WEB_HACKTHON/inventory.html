@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory | Smart Pantry</title>
+    <link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <h1>Smart Pantry - Inventory</h1>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="inventory.html" class="active">📦 Inventory</a>
+        </nav>
+    </header>
+
+    <!-- Inventory Management -->
+    <main>
+        <section class="inventory-form">
+            <h2>📋 Add a New Item</h2>
+            <form id="inventoryForm">
+                <input type="text" id="itemName" placeholder="🔖 Item Name" required>
+                <input type="number" id="quantity" placeholder="📊 Quantity" required>
+                <input type="date" id="expiryDate" required>
+                <button type="submit">➕ Add Item</button>
+            </form>
+        </section>
+
+        <!-- Search Feature -->
+        <section class="search-box">
+            <input type="text" id="searchItem" placeholder="🔎 Search items...">
+        </section>
+
+        <!-- Inventory List -->
+        <section class="inventory-list">
+            <h2>📦 Inventory Items</h2>
+            <ul id="itemList">
+                <!-- Items will appear here -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Smart Pantry | All Rights Reserved.</p>
+    </footer>
+
+    <script src="inventory.js"></script>
+</body>
+</html>
