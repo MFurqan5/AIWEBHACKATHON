@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Smart Pantry</title>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
+                <li><a href="expiration_alerts.html">Expiration Alerts</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <main class="container">
+        <h1>Delicious Recipes</h1>
+
+        <div class="search-bar">
+            <input type="text" id="searchBar" placeholder="Search Recipes...">
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="breakfast">Breakfast</button>
+            <button class="filter-btn" data-category="lunch">Lunch</button>
+            <button class="filter-btn" data-category="dinner">Dinner</button>
+            <button class="filter-btn" data-category="dessert">Desserts</button>
+        </div>
+        
+        <div class="recipes-container">
+            <div class="recipe-card" data-category="breakfast">
+                <img src="pancakes.jpeg" alt="Pancakes">
+                <h2>Fluffy Pancakes</h2>
+                <p>Light and fluffy pancakes made in just 10 minutes.</p>
+                <a href="https://www.inspiredtaste.net/24593/essential-pancake-recipe/" target="_blank">
+                    <button class="view-recipe">View Recipe</button>
+                </a>                
+            </div>
+            
+            <div class="recipe-card" data-category="lunch">
+                <img src="salad.jpeg" alt="Salad">
+                <h2>Healthy Salad</h2>
+                <p>A refreshing and nutritious green salad.</p>
+                <a href="https://www.food.com/recipe/health-salad-103743" target="_blank">
+                    <button class="view-recipe">View Recipe</button>
+                </a>                
+            </div>
+            
+            <div class="recipe-card" data-category="dinner">
+                <img src="pasta.jpeg" alt="Pasta">
+                <h2>Creamy Pasta</h2>
+                <p>A rich and creamy pasta dish ready in 20 minutes.</p>
+                <a href="https://www.allrecipes.com/recipe/269500/creamy-garlic-pasta/" target="_blank">
+                    <button class="view-recipe">View Recipe</button>
+                </a>                
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; <span class="year"></span> Smart Pantry. All rights reserved.</p>
+    </footer>
+    
+    <script src="recipes.js"></script>
+</body>
+</html>
